@@ -149,5 +149,348 @@ if m==0 or m>=5:
 else:
     print("NUMBER OF CANDIES SOLD:",m)
     print("NUMBER OF CANDIES AVAILABLE:",n-m)
+    
+    ****************************************************
+    num=int(input("enter a number:"))
+i=0 #initialization
+while (i<=num): #condition
+    print(i,end=" ")
+    i=i+1 #increment or decrement
+    *********************************
+
+n=int(input("enter a number:"))
+i=sum=0
+while(i<=n):
+    sum=sum+i
+    i=i+1
+    print(sum)
+******************************************
+n=int(input("enter a number:"))
+i=sum=0
+while(i<=n):
+    sum=sum+i 
+    i=i+1 
+print(sum)
+
+*************************************
+n=int(input("enter a number:"))
+i=sum=0
+while(n!=0):
+    r=n%10
+    sum=sum+r
+    n=n//10
+print(sum)
+    
+    ******************************
+n=int(input("enter a number:"))
+i=0
+while(i<=n):
+    if i%2==0:
+        print(i,end=" ")
+    i=i+1
+************************************
+n=int(input("enter a number :"))
+i=sum=0
+while(i<=n):
+    if i%2==0:
+        sum=sum+i 
+    i=i+1
+print(sum)
+
+****************************************
+n=int(input("enter a number:"))
+i=o=e=0
+while(i<=n):
+    if i%2==0:
+        e=e+i
+    else:
+        o=o+i
+    i=i+1
+print("even sum is:",e)
+print("odd sum is:",o)
+
+****************************************
+n=int(input("enter a number:"))
+temp=0
+while(n>0):
+    temp=n%10
+    print(temp,end="")
+    n=n//10
+
+dn=int(input("enter a number:"))
+bn=0
+i=0
+while dn!=0:
+    r=dn%2
+    bn=bn+r*(10**i)
+    dn=dn//2
+    i=i+1 
+print(bn)
+
+bn=int(input("enter a number:"))
+dn=0
+i=0
+while bn!=0:
+    r=bn%10
+    dn=dn+r*(2**i)
+    bn=bn//10
+    i=i+1 
+print(dn)
+
+for i in range(11):
+    print(i,end=" ")
+
+for i in range(1,21,5):
+    print(i)
+
+**********************************
+n=10
+s=0
+for i in range(1,n+1):
+    s=s+i 
+print("avg is",s/n)
+
+*********************************
+#program for math tables
+n=int(input("enter from 1-10: "))
+print("multiplication table of ",n)
+print("---------------------------")
+for i in range (1,11):
+    print(n,"X",i,"=",n*i)
+
+*********************************
+n=int(input("enter a number:"))
+fact=1 
+for i in range(1,n+1):
+    fact=fact*i 
+print("factorial value of",n,"is",fact)
+
+***************************
+n=int(input())
+s=0.0
+for i in range(1,n+1):
+    a=1.0/i 
+    s=s+a 
+print(s)
+
+***************************
+n=int(input())
+s=0.0
+for i in range(1,n+1):
+    a=i/i+1 
+    s=s+a 
+print(s)
+
+***************************
+n=int(input("enter a number:"))
+i=e=o=0
+d=0 
+while(n>0):
+    i=n%10
+    n=n//10
+    if i%2==0:
+        e=e+i
+    else:
+        o=o+i 
+    i=i+1
+print("difference is",o-e)
+
+num=str(input())
+print(int(num,17))
+
+abc=[1,2,3,4,5,6,7]
+for i in abc:
+    if i==4:
+        break 
+    print(i)
+
+abc=[1,2,3,4,5,6,7]
+for i in abc:
+    if i==4:
+        continue
+    print(i)
+
+****************************
+for letter in 'sreya':
+    pass
+    print("pass:",letter)
+
+****************************
+import calendar
+y=int(input("enter the year"))
+m=1 
+cal=calendar.TextCalendar(calendar.SUNDAY)
+i=1 
+while i<=12:
+    cal.prmonth(y,i)
+    i=i+1
+
+*************
+txt='sreya'
+index=0
+for i in txt:
+    print("message [",index,"] = ",i)
+    index+=1
+
+******************
+txt='the nun'
+print(txt.title())
+
+****************
+txt='DONKEY'
+print(txt.lower())
+
+*******************
+txt='donkey'
+print(txt.upper())
+
+******************
+txt='8'
+print(txt.zfill(4))
+
+********************
+n=int(input())
+s=0
+while(n!=0):
+    r=n%10
+    s=s+(r*r*r)
+    n=n//10
+if s==n:
+    print("armstrong")
+else:
+    print("not armstrong")
+
+******************
+txt='sreya'
+print(txt)
+print(txt[1:5])
+print(txt[:6])
+print(txt[:])
+print(txt[-4])
+
+**************
+txt='subha'
+print(txt[::-1])
+
+**************
+txt='india'
+print(txt[::3])
+
+*************
+txt='   hi students   '
+print(txt.lstrip())
+
+********************
+ch='a'
+print(ord(ch))
+
+print(chr(115))
+
+*********************
+txt1='india is great'
+txt2='is'
+if txt2 in txt1:
+    print("found")
+else:
+    print("not found")
+
+************************
+txt='glucose'
+print(max(txt))
+print(min(txt))
+
+**************************
+txt1='india is my country'
+for i in txt1:
+    print(i,end=" ")
+
+***************************
+txt='india is my country'
+i=0
+while i<len(txt):
+    letter=txt[i]
+    print(letter,end=" ")
+    i+=1
+
+*********************
+txt='sa sa sa sa'
+print(txt.replace('s','p'))
+
+**************************
+n=int(input())
+for i in range(1,n+1):
+    ch='A'
+    print()
+    for j in range(1,i+1):
+        print(ch,end=" ")
+        ch=chr(ord(ch)+1)
+
+message="danger"
+i=0
+while i<len(message):
+    letter=message[i]
+    print(chr(ord(letter)+2),end="")
+    i+=1
+
+****************************
+List=[1,2,3,4,5,6,7,8,9,10]
+print(List)
+
+print(List[1])
+
+print(List[2:5])
+
+print(List[::2])
+
+print(List[1::3])
+
+List[5]=100
+print(List)
+
+List.append(200)
+print(List)
+
+******************
+txt='Donkey And Monkey'
+print(txt.swapcase())
+
+***********************
+txt='abc,def,ghi,jkl'
+print(txt.split(','))
+print('-'.join(['abc','def','ghi','jkl']))
+
+*********************
+txt='my name is sreya'
+print(list(enumerate(txt)))
+
+************************
+txt='jamesbond007'
+print(txt.isalnum())
+print(txt.isalpha())
+print(txt.isnumeric())
+print(txt.isdigit())
+print(txt.islower())
+print(txt.isupper())
+
+*********************
+txt=' '
+print(txt.isspace())
+txt=""
+print(txt.isspace())
+txt='sreya'
+print(len(txt))
+txt='sr eya'
+print(len(txt))
+
+***************************************
+txt="sreya"
+print(txt.ljust(10,'*'))
+print(txt.rjust(10,'*'))
+print(txt.center(10,'$'))
+print(txt.capitalize())
+
+
+
+
 
 
